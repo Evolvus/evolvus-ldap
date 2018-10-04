@@ -1,12 +1,13 @@
 var ActiveDirectory = require('activedirectory');
 var ldapconfig = require('./ldapconfig.js');
 const _ = require("lodash");
+const debug = require("debug")("evolvus-ldap");
 
 var config = {
   url: ldapconfig.url,
-  baseDN: ldapconfig.baseDN,
-  username: ldapconfig.username,
-  password: ldapconfig.password
+  baseDN: ldapconfig.baseDN
+  //username: ldapconfig.username,
+  //password: ldapconfig.password
 };
 var ad = new ActiveDirectory(config);
 

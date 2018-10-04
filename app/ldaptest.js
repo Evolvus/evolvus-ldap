@@ -1,6 +1,6 @@
 var ActiveDirectory = require('activedirectory');
 
-var config = { url: 'ldap://evolvus.com',
+var config = { url: 'ldap://domain.evolvus.com',
                baseDN: 'dc=evolvus,dc=com',
                username: 'admin@evolvus.com',
                password: 'alm888#' }
@@ -20,7 +20,7 @@ ad.authenticate(config.username, config.password, function(err, auth) {
   }
 });
 
-var query = 'cn=*srihari*';
+var query = 'cn=*mahendra*';
 ad.findUsers(query, function(err, users) {
   if (err) {
     console.log('ERROR: ' +JSON.stringify(err));
