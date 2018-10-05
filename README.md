@@ -63,7 +63,7 @@ __Example__
 
 ```js
 var ad = new ActiveDirectory(config);
-var username = 'john.smith@domain.com';
+var username = 'username@domain.com';//mahendrar@domain.com
 var password = 'password';
 
 ad.authenticate(username, password, function(err, auth) {
