@@ -2,8 +2,8 @@ var ActiveDirectory = require('activedirectory');
 
 var config = { url: 'ldap://domain.evolvus.com',
                baseDN: 'dc=evolvus,dc=com',
-               username: 'admin@evolvus.com',
-               password: 'alm888#' }
+               username: 'mahendrar@evolvus.com',
+               password: 'padma@123' }
 var ad = new ActiveDirectory(config);
 
 ad.authenticate(config.username, config.password, function(err, auth) {
